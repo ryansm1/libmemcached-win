@@ -1,7 +1,11 @@
 
 This is libmemcached library with fixes for working on windows platform.
-To compile it you need to open vcxproj file in win32 folder and perform compilation (vs2015).
+To compile it you need to open vcxproj file in win32 folder and perform compilation (vs2017).
 You will get lib and dll files that you can use for linking with your msvc application
+
+There are targets for x86 and x64 in with and without debug symbols for dynamic or static builds.
+Specify msbuild target /t:CopyFiles to create Lib and Include directories (similar to make install
+output on Linux).
 
 
 libmemcached:
